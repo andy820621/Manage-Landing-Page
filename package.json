@@ -1,0 +1,15 @@
+{
+	"name": "fem-manage-landing-page",
+	"private": true,
+	"version": "0.0.0",
+	"scripts": {
+		"dev": "vite --host",
+		"build": "vite build",
+		"preview": "vite preview",
+		"tailwind": "npx tailwind -i ./input.css -o ./dist/output.css --watch"
+	},
+	"devDependencies": {
+		"tailwindcss": "^3.1.5",
+		"vite": "^2.9.9"
+	}
+}
