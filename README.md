@@ -1,6 +1,10 @@
 # Manage Landing Page
 
-Use pure HTML, vanilla JavaScript, and A11y to build this Website, ans use Tailwind as css framework, and use Vite as build tool.
+Use pure HTML, JavaScript,and a11y-slider to build this Website, and use Tailwind as css framework, and use Vite as build tool.
+
+## Website
+
+Go to [Website](https://manage-landing-page.vercel.app/) to see the Website.
 
 ## Project Setup
 

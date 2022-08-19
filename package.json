@@ -6,7 +6,7 @@
 		"dev": "vite --host",
 		"build": "vite build",
 		"preview": "vite preview",
-		"tailwind": "npx tailwind -i ./input.css -o ./dist/output.css --watch"
+		"tailwind": "npx tailwind -i ./input.css -o ./tailwind/output.css --watch"
 	},
 	"devDependencies": {
 		"tailwindcss": "^3.1.5",
