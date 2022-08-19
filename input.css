@@ -127,7 +127,7 @@
 }
 .a11y-slider-prev,
 .a11y-slider-next {
-	@apply relative w-8 h-8 block z-10 row-[1/2] translate-y-8;
+	@apply relative w-8 h-8 block z-10 row-[1/2] translate-y-8 -indent-[9999px];
 }
 .a11y-slider-prev {
 	@apply mr-auto col-[1/2] -translate-x-full;
@@ -137,7 +137,7 @@
 }
 .a11y-slider-prev::before,
 .a11y-slider-next::before {
-	@apply absolute text-[2rem] leading-8 font-black inset-0 inline-block;
+	@apply absolute text-[2rem] leading-8 font-black inset-0 inline-block indent-0;
 	-webkit-font-smoothing: antialiased;
 	font-family: "Font Awesome 5 Free";
 }

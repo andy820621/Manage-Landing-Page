@@ -39,6 +39,3 @@ const slider = new A11YSlider(document.querySelector(".slider"), {
 		},
 	},
 });
-document
-	.querySelectorAll(".a11y-slider-container button:not([tabindex])")
-	.forEach((btn) => (btn.textContent = ""));
