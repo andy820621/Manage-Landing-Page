@@ -16,8 +16,11 @@ module.exports = {
 		},
 		screens: {
 			mobile: "30em",
-			tablet: "50em",
+			tablet: "47em",
 			desktop: "1440px",
+			"max-mobile": { max: "30em" },
+			"max-tablet": { max: "47em" },
+			"max-esktop": { max: "1440px" },
 		},
 		extend: {
 			colors: {
