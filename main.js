@@ -18,9 +18,17 @@ navToggle.addEventListener("click", (e) => {
 	e.stopPropagation();
 	toggleMenu();
 });
-primaryHeader.addEventListener("click", () => {
+primaryHeader.addEventListener("click", (e) => {
+	// e.stopPropagation();
 	if (primaryNav.hasAttribute("data-visible")) toggleMenu();
 });
+primaryNav.addEventListener("click", (e) => e.stopPropagation(), false);
+primaryNav.querySelectorAll("li a").forEach((link) =>
+	link.addEventListener("click", (e) => {
+		e.stopPropagation();
+		if (primaryNav.hasAttribute("data-visible")) toggleMenu();
+	})
+);
 
 // A11y Slider
 const slider = new A11YSlider(document.querySelector(".slider"), {

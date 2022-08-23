@@ -23,7 +23,7 @@
 		<!-- Style Css -->
 		<link rel="stylesheet" href="./tailwind/output.css" />
 	</head>
-	<body class="text-body text-primary-400">
+	<body class="text-body text-primary-400 overflow-x-hidden">
 		<header class="primary-header pt-12">
 			<div class="my-container">
 				<div class="flex items-center justify-between">
@@ -33,7 +33,7 @@
 						</svg>
 					</a>
 					<button
-						class="mobile-nav-toggle tablet:hidden z-50"
+						class="mobile-nav-toggle tablet:hidden z-50 cursor-pointer"
 						aria-controls="primary-navigation"
 						aria-expanded="false"
 					>
@@ -70,10 +70,10 @@
 		</header>
 
 		<main>
-			<section class="py-20">
+			<section class="py-20 max-tablet:text-center">
 				<div class="my-container">
 					<div class="even-columns">
-						<div class="flow">
+						<div class="flow | max-tablet:[&>p]:mx-auto">
 							<h1 class="text-primary-heading leading-[1.1] font-bold">
 								Bring everyone together to build better products.
 							</h1>
@@ -83,7 +83,10 @@
 							</p>
 							<button class="btn">Get Started</button>
 						</div>
-						<div>
+						<div
+							class="with-blob-bgImage | max-tablet:-order-1 max-tablet:mx-auto"
+						>
+							<img src="/images/bg-tablet-pattern.svg" class="blob blob-1" />
 							<img src="./images/illustration-intro.svg" alt="" />
 						</div>
 					</div>
@@ -94,9 +97,10 @@
 				<div class="my-container">
 					<div class="even-columns">
 						<div
-							class="flow text-center tablet:text-left"
+							class="with-blob-bgImage | flow text-center tablet:text-left"
 							style="--flow-spacer: 1.5em"
 						>
+							<img src="/images/bg-tablet-pattern.svg" class="blob blob-2" />
 							<h2 class="text-secondary-heading leading-[1.1] font-bold">
 								What’s different about Manage?
 							</h2>

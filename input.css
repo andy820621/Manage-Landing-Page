@@ -58,6 +58,18 @@
 		@apply absolute w-[1px] h-[1px] p-0 m-[-1px] overflow-hidden  whitespace-nowrap border-0;
 		clip: rect(0, 0, 0, 0);
 	}
+	.with-blob-bgImage {
+		position: relative;
+	}
+	.with-blob-bgImage .blob {
+		@apply absolute inset-0 -z-[1];
+	}
+	.with-blob-bgImage .blob-1 {
+		@apply scale-[1.2] tablet:scale-[1.34] translate-x-[24%] -translate-y-[38%] tablet:-translate-y-[32%];
+	}
+	.with-blob-bgImage .blob-2 {
+		@apply max-tablet:scale-75 translate-x-[50%] -translate-y-full tablet:-translate-x-[60%] tablet:translate-y-[50%];
+	}
 }
 @layer components {
 	.btn {
@@ -86,6 +98,9 @@
 	.mobile-nav-toggle {
 		@apply p-2 fixed right-6;
 	}
+	.primary-header[data-overlay] {
+		@apply relative z-50;
+	}
 	.primary-navigation {
 		@apply hidden fixed max-w-lg mx-auto p-12 top-28 bottom-auto inset-x-4 bg-neutral-100 rounded-md;
 		box-shadow: 0 0 0.81em rgba(0, 0, 0, 0.08);
@@ -97,7 +112,7 @@
 		@apply grid text-center text-nav font-bold text-primary-400;
 	}
 	[data-visible] {
-		@apply block z-50;
+		@apply block;
 	}
 }
 
