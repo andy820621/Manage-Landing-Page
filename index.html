@@ -23,7 +23,7 @@
 		<!-- Style Css -->
 		<link rel="stylesheet" href="./tailwind/output.css" />
 	</head>
-	<body class="text-body text-primary-400 overflow-x-hidden">
+	<body class="text-body text-primary-400">
 		<header class="primary-header pt-12">
 			<div class="my-container">
 				<div class="flex items-center justify-between">
@@ -240,7 +240,7 @@
 						</a>
 
 						<ul
-							class="flex gap-8 tablet:gap-3 [&>li>a>svg]:w-8 tablet:[&>li>a>svg]:w-6 [&>li>a>svg]:fill-neutral-100 [&>li>a:is(:hover,:focus)>svg]:fill-accent-400 [&>li>a>svg]:duration-300 [&>li>a>svg]:aspect-square"
+							class="flex gap-5 tablet:gap-3 [&>li>a>svg]:w-8 tablet:[&>li>a>svg]:w-6 [&>li>a>svg]:fill-neutral-100 [&>li>a:is(:hover,:focus)>svg]:fill-accent-400 [&>li>a>svg]:duration-300 [&>li>a>svg]:aspect-square"
 							role="list"
 							aria-label="Social links"
 						>
@@ -286,7 +286,9 @@
 						</ul>
 					</div>
 					<div>
-						<nav class="footer-nav | columns-2 gap-[clamp(5.5rem,10vw,7rem)]">
+						<nav
+							class="columns-2 gap-[clamp(5.5rem,10vw,7rem)] max-w-[90%] mx-auto"
+						>
 							<ul
 								class="flow [&>li>a]:duration-300 [&>li>a:is(:hover,:focus)]:text-accent-400"
 								style="--flow-spacer: 1em"
@@ -303,12 +305,8 @@
 						</nav>
 					</div>
 					<div class="justify-self-end">
-						<form action="post">
-							<input
-								type="email"
-								class="mr-3"
-								placeholder="updates in your inbox..."
-							/>
+						<form action="post" class="flex justify-center gap-5 flex-wrap">
+							<input type="email" placeholder="updates in your inbox..." />
 							<button class="btn" data-glow="none">Go</button>
 						</form>
 					</div>

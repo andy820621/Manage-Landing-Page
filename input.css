@@ -28,6 +28,7 @@
 @layer base {
 	html,
 	body {
+		@apply overflow-x-hidden;
 		font-family: "Be Vietnam Pro", sans-serif;
 	}
 	p:not([class]) {
@@ -60,6 +61,8 @@
 	}
 	.with-blob-bgImage {
 		position: relative;
+		/* overflow-x: hidden;
+		overflow-y: visible; */
 	}
 	.with-blob-bgImage .blob {
 		@apply absolute inset-0 -z-[1];

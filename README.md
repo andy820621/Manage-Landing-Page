@@ -4,7 +4,7 @@ Use pure HTML, JavaScript,and a11y-slider to build this Website, and use Tailwin
 
 ## Website
 
-Go to [Website](https://manage-landing-page-andy820621.vercel.app/) to see the Website.
+Go to see the [Website](https://manage-landing-page-andy820621.vercel.app/).
 
 ## Project Setup
 
